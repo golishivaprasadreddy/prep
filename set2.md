@@ -20,6 +20,118 @@
 * **Bayesian →** More flexible, accounts for uncertainty, suitable when prior knowledge or uncertainty quantification is critical.
 
 ---
+2.  **Break down the steps of SGD and analyze why it is preferred for training deep neural networks compared to batch gradient descent.**
+
+
+Stochastic Gradient Descent (SGD)
+
+Steps of SGD
+
+1. Initialize parameters
+
+Randomly set weights  and biases .
+
+
+
+2. Shuffle dataset
+
+To avoid bias in the order of data.
+
+
+
+3. Iterate over training data (epoch = one pass through dataset):
+
+Pick one sample (or a small mini-batch) .
+
+Forward pass: compute model’s prediction .
+
+Compute loss:
+
+
+
+
+L(\theta; x_i, y_i)
+
+Parameter update:
+
+
+\theta = \theta - \eta \cdot \nabla_\theta L(\theta; x_i, y_i)
+
+4. Repeat for all samples → one epoch.
+
+
+5. Continue for many epochs until convergence or early stopping.
+
+
+
+
+---
+
+Why SGD is Preferred Over Batch Gradient Descent (BGD)
+
+Batch Gradient Descent (BGD) Recap
+
+Computes gradient using the entire dataset before each update.
+
+One update = after processing all  samples.
+
+Stable, but very slow and memory-heavy for large datasets.
+
+
+
+---
+
+Advantages of SGD in Deep Learning
+
+1. Efficiency for Large Datasets
+
+BGD requires scanning the whole dataset before updating → impractical for millions of samples.
+
+SGD updates after each sample/mini-batch, so training starts learning immediately.
+
+
+
+2. Lower Memory Usage
+
+No need to load the full dataset into memory; can work with streaming data.
+
+
+
+3. Faster Convergence
+
+Frequent updates mean parameters adjust continuously, often leading to quicker convergence.
+
+
+
+4. Escaping Local Minima & Saddle Points
+
+BGD follows a smooth path and can get stuck.
+
+SGD’s noisy updates help “jump out” of bad local minima and saddle points in non-convex loss landscapes (common in deep nets).
+
+
+
+5. Better Generalization
+
+The noise in updates acts like a regularizer, preventing overfitting.
+
+Models trained with SGD often generalize better on unseen data.
+
+
+
+
+
+---
+
+Summary
+
+BGD: Stable but slow and impractical for big data.
+
+SGD: Noisy but efficient, scalable, memory-friendly, and leads to better generalization.
+
+That’s why SGD (especially mini-batch SGD) is the standard for training deep neural networks.
+
+
 
 **3. In how many ways dataset augmentation are used in regularization of Deep Learning?**
 
