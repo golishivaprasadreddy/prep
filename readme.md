@@ -8,7 +8,7 @@ Here are the links to all the sets:
 - [Set 4](https://github.com/golishivaprasadreddy/prep/blob/main/set4.md)
 
 
-🔁 Repeated Questions Across Sets
+🔁 **Repeated Questions Across Sets**
 1. Analyze how convolution differs from fully connected layers in terms of parameter efficiency and inductive bias.
 
 This question appears three times across different sets.
