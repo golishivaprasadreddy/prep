@@ -1,5 +1,5 @@
 
-📘 Set – Questions & Answers
+📘 Set 3– Questions & Answers
 
 **1. Analyze why traditional machine learning algorithms struggle with tasks like image recognition and how deep learning addresses these challenges.**
 
