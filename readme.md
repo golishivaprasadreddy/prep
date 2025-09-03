@@ -12,3 +12,6 @@ Here are the links to all the sets:
 1. Analyze how convolution differs from fully connected layers in terms of parameter efficiency and inductive bias.
 
 This question appears three times across different sets.
+
+
+- [NSC Set 1](https://github.com/golishivaprasadreddy/prep/blob/main/nscset1.md)
